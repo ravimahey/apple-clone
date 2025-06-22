@@ -3,9 +3,11 @@
 
 <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="index.css" />
+
 </head>
 
 <body>
@@ -130,32 +132,34 @@
             </span>
             <span>
                 <a class="nav-dropdown-mobile-open" href="#">
-                <svg width="17" height="17" viewBox="0 0 18 18">
-                    <polyline id="globalnav-menutrigger-bread-bottom" fill="none" stroke="currentColor"
-                        stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" points="2 12, 16 12"
-                        class="globalnav-menutrigger-bread globalnav-menutrigger-bread-bottom">
-                        <animate id="globalnav-anim-menutrigger-bread-bottom-open" attributeName="points"
-                            keyTimes="0;0.5;1" dur="0.24s" begin="indefinite" fill="freeze" calcMode="spline"
-                            keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1" values=" 2 12, 16 12; 2 9, 16 9; 3.5 15, 15 3.5">
-                        </animate>
-                        <animate id="globalnav-anim-menutrigger-bread-bottom-close" attributeName="points"
-                            keyTimes="0;0.5;1" dur="0.24s" begin="indefinite" fill="freeze" calcMode="spline"
-                            keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1" values=" 3.5 15, 15 3.5; 2 9, 16 9; 2 12, 16 12">
-                        </animate>
-                    </polyline>
-                    <polyline id="globalnav-menutrigger-bread-top" fill="none" stroke="currentColor" stroke-width="1.2"
-                        stroke-linecap="round" stroke-linejoin="round" points="2 5, 16 5"
-                        class="globalnav-menutrigger-bread globalnav-menutrigger-bread-top">
-                        <animate id="globalnav-anim-menutrigger-bread-top-open" attributeName="points"
-                            keyTimes="0;0.5;1" dur="0.24s" begin="indefinite" fill="freeze" calcMode="spline"
-                            keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1" values=" 2 5, 16 5; 2 9, 16 9; 3.5 3.5, 15 15">
-                        </animate>
-                        <animate id="globalnav-anim-menutrigger-bread-top-close" attributeName="points"
-                            keyTimes="0;0.5;1" dur="0.24s" begin="indefinite" fill="freeze" calcMode="spline"
-                            keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1" values=" 3.5 3.5, 15 15; 2 9, 16 9; 2 5, 16 5">
-                        </animate>
-                    </polyline>
-                </svg>
+                    <svg width="17" height="17" viewBox="0 0 18 18">
+                        <polyline id="globalnav-menutrigger-bread-bottom" fill="none" stroke="currentColor"
+                            stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" points="2 12, 16 12"
+                            class="globalnav-menutrigger-bread globalnav-menutrigger-bread-bottom">
+                            <animate id="globalnav-anim-menutrigger-bread-bottom-open" attributeName="points"
+                                keyTimes="0;0.5;1" dur="0.24s" begin="indefinite" fill="freeze" calcMode="spline"
+                                keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1"
+                                values=" 2 12, 16 12; 2 9, 16 9; 3.5 15, 15 3.5">
+                            </animate>
+                            <animate id="globalnav-anim-menutrigger-bread-bottom-close" attributeName="points"
+                                keyTimes="0;0.5;1" dur="0.24s" begin="indefinite" fill="freeze" calcMode="spline"
+                                keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1"
+                                values=" 3.5 15, 15 3.5; 2 9, 16 9; 2 12, 16 12">
+                            </animate>
+                        </polyline>
+                        <polyline id="globalnav-menutrigger-bread-top" fill="none" stroke="currentColor"
+                            stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" points="2 5, 16 5"
+                            class="globalnav-menutrigger-bread globalnav-menutrigger-bread-top">
+                            <animate id="globalnav-anim-menutrigger-bread-top-open" attributeName="points"
+                                keyTimes="0;0.5;1" dur="0.24s" begin="indefinite" fill="freeze" calcMode="spline"
+                                keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1" values=" 2 5, 16 5; 2 9, 16 9; 3.5 3.5, 15 15">
+                            </animate>
+                            <animate id="globalnav-anim-menutrigger-bread-top-close" attributeName="points"
+                                keyTimes="0;0.5;1" dur="0.24s" begin="indefinite" fill="freeze" calcMode="spline"
+                                keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1" values=" 3.5 3.5, 15 15; 2 9, 16 9; 2 5, 16 5">
+                            </animate>
+                        </polyline>
+                    </svg>
                 </a>
             </span>
         </span>
@@ -174,8 +178,8 @@
             <li><a href="">Accessories</a></li>
         </ul>
         <div class="nav-dropdown-mobile-close"><a href="#">
-            X
-        </a></div>
+                X
+            </a></div>
     </div>
     <div class="macair-sec">
         <div class="macair-sec-top">
@@ -582,10 +586,16 @@
         <div class="footer-container">
             <div>
                 <div>
-                    <div class="footer-list-title">
+                    <div class="footer-list-title" id="1">
                         Shop and Learn
+                        <span class="footer-dropdowns-icon footer-dropdowns-icon-1" id="1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 512 512">
+                                <path id="1"
+                                    d="M256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM135 241c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l87 87 87-87c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L273 345c-9.4 9.4-24.6 9.4-33.9 0L135 241z" />
+                            </svg>
+                        </span>
                     </div>
-                    <ul class="footer-list">
+                    <ul class="footer-list footer-list-1">
                         <li> <a href="#">Store </a></li>
                         <li> <a href="#">Mac </a></li>
                         <li> <a href="#">iPad </a></li>
@@ -599,35 +609,58 @@
                         </li>
                     </ul>
                 </div>
+                <hr>
                 <div>
-                    <div class="footer-list-title">
+                    <div class="footer-list-title" id="2">
                         Apple Wallet
+                        <span class="footer-dropdowns-icon footer-dropdowns-icon-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 512 512">
+                                <path
+                                    d="M256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM135 241c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l87 87 87-87c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L273 345c-9.4 9.4-24.6 9.4-33.9 0L135 241z" />
+                            </svg>
+                        </span>
                     </div>
-                    <ul class="footer-list">
+                    <ul class="footer-list footer-list-2">
                         <li> <a href="#"> Wallet </a>
                         <li> <a href="#"> Apple Card </a>
                         <li> <a href="#"> Apple Pay </a>
                         <li> <a href="#"> Apple Cash </a>
-
                     </ul>
                 </div>
+                <hr>
             </div>
             <div>
                 <div>
                     <div>
-                        <div class="footer-list-title">
+                        <div class="footer-list-title" id="3">
                             Account
+                            <span class="footer-dropdowns-icon footer-dropdowns-icon-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 512 512">
+                                    <path
+                                        d="M256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM135 241c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l87 87 87-87c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L273 345c-9.4 9.4-24.6 9.4-33.9 0L135 241z" />
+                                </svg>
+                            </span>
                         </div>
-                        <ul class="footer-list">
+                        <ul class="footer-list footer-list-3">
                             <li> <a href="#"> Manage Your Apple Account</a></li>
                             <li> <a href="#"> Apple Store Account</a></li>
                             <li> <a href="#"> iCloud.com</a></li>
                         </ul>
                     </div>
+                    <hr>
                     <div>
                         <div>
-                            <div class="footer-list-title">Entertainment</div>
-                            <ul class="footer-list">
+                            <div class=" footer-list-title" id="4">
+                                Entertainment
+                                <span class="footer-dropdowns-icon footer-dropdowns-icon-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                        viewBox="0 0 512 512">
+                                        <path
+                                            d="M256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM135 241c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l87 87 87-87c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L273 345c-9.4 9.4-24.6 9.4-33.9 0L135 241z" />
+                                    </svg>
+                                </span>
+                            </div>
+                            <ul class="footer-list footer-list-4">
                                 <li> <a href="#"> Apple One</a></li>
                                 <li> <a href="#"> Apple TV+</a></li>
                                 <li> <a href="#"> Apple Music</a></li>
@@ -639,14 +672,21 @@
                                 <li> <a href="#"> App Store</a></li>
                             </ul>
                         </div>
+                        <hr>
                     </div>
                 </div>
             </div>
             <div>
-                <div class="footer-list-title">Apple Store</div>
-                <ul class="footer-list">
-
-
+                <div class="footer-list-title " id="5">
+                    Apple Store
+                    <span class="footer-dropdowns-icon footer-dropdowns-icon-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 512 512">
+                            <path
+                                d="M256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM135 241c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l87 87 87-87c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L273 345c-9.4 9.4-24.6 9.4-33.9 0L135 241z" />
+                        </svg>
+                    </span>
+                </div>
+                <ul class="footer-list footer-list-5">
                     <li> <a href="#">Find a Store </a></li>
                     <li> <a href="#">Genius Bar </a></li>
                     <li> <a href="#">Today at Apple </a></li>
@@ -661,42 +701,83 @@
                     <li> <a href="#">Shopping Help </a></li>
                 </ul>
             </div>
+            <hr>
             <div>
                 <div>
-                    <div class="footer-list-title">For Bussiness</div>
-                    <ul class="footer-list">
+                    <div class="footer-list-title" id="6">
+                        For Bussiness
+                        <span class="footer-dropdowns-icon footer-dropdowns-icon-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 512 512">
+                                <path
+                                    d="M256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM135 241c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l87 87 87-87c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L273 345c-9.4 9.4-24.6 9.4-33.9 0L135 241z" />
+                            </svg>
+                        </span>
+                    </div>
+                    <ul class="footer-list footer-list-6">
                         <li> <a href="#">Apple and Business</a></li>
                         <li> <a href="#">Shop for Business</a></li>
                     </ul>
                 </div>
+                <hr>
                 <div>
-                    <div class="footer-list-title">For Education</div>
-                    <ul class="footer-list">
+                    <div class="footer-list-title" id="7">For Education
+                        <span class="footer-dropdowns-icon footer-dropdowns-icon-7">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 512 512">
+                                <path
+                                    d="M256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM135 241c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l87 87 87-87c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L273 345c-9.4 9.4-24.6 9.4-33.9 0L135 241z" />
+                            </svg>
+                        </span>
+                    </div>
+                    <ul class="footer-list footer-list-7">
                         <li><a href="#">Apple and Education</a></li>
                         <li><a href="#">Shop for Education</a></li>
                         <li><a href="#">Shop for University</a></li>
                     </ul>
                 </div>
+                <hr>
                 <div>
-                    <div class="footer-list-title">For Health</div>
-                    <ul class="footer-list">
+                    <div class="footer-list-title" id="8">For Health
+                        <span class="footer-dropdowns-icon footer-dropdowns-icon-8">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 512 512">
+                                <path
+                                    d="M256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM135 241c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l87 87 87-87c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L273 345c-9.4 9.4-24.6 9.4-33.9 0L135 241z" />
+                            </svg>
+                        </span>
+                    </div>
+                    <ul class="footer-list footer-list-8">
                         <li><a href="#">Apple in Healthcare</a></li>
                         <li><a href="#">Mac in Healthcare</a></li>
                         <li><a href="#">Health on Apple watch</a></li>
                     </ul>
                 </div>
+                <hr>
                 <div>
-                    <div class="footer-list-title">For Government</div>
-                    <ul class="footer-list">
+                    <div class="footer-list-title" id="9">For Government
+                        <span class="footer-dropdowns-icon footer-dropdowns-icon-9">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 512 512">
+                                <path
+                                    d="M256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM135 241c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l87 87 87-87c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L273 345c-9.4 9.4-24.6 9.4-33.9 0L135 241z" />
+                            </svg>
+                        </span>
+                    </div>
+                    <ul class="footer-list  footer-list-9">
                         <li><a href="#">Apple in Healthcare</a></li>
                         <li><a href="#">Shop for Veterans and Military</a></li>
                     </ul>
                 </div>
+                <hr>
             </div>
             <div>
                 <div>
-                    <div class="footer-list-title">Apple Values</div>
-                    <ul class="footer-list">
+                    <div class="footer-list-title" id="10">Apple Values
+                        <span class="footer-dropdowns-icon footer-dropdowns-icon-10">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 512 512">
+                                <path
+                                    d="M256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM135 241c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l87 87 87-87c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L273 345c-9.4 9.4-24.6 9.4-33.9 0L135 241z" />
+                            </svg>
+                        </span>
+                    </div>
+                    <ul class="footer-list  footer-list-10">
                         <li><a href="#">Accessibility</a></li>
                         <li><a href="#">Education</a></li>
                         <li><a href="#">Environment</a></li>
@@ -704,9 +785,17 @@
                         <li><a href="#">Supply Chain Innovation</a></li>
                     </ul>
                 </div>
+                <hr>
                 <div>
-                    <div class="footer-list-title">About Apple</div>
-                    <ul class="footer-list">
+                    <div class="footer-list-title" id="11">About Apple
+                        <span class="footer-dropdowns-icon footer-dropdowns-icon-11">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 512 512">
+                                <path
+                                    d="M256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM135 241c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l87 87 87-87c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L273 345c-9.4 9.4-24.6 9.4-33.9 0L135 241z" />
+                            </svg>
+                        </span>
+                    </div>
+                    <ul class="footer-list  footer-list-11">
                         <li><a href="#">Newsroom</a></li>
                         <li><a href="#">Apple Leadership</a></li>
                         <li><a href="#">Career Opportunities</a></li>
@@ -716,6 +805,7 @@
                         <li><a href="#">Contact Apple</a></li>
                     </ul>
                 </div>
+                <hr>
             </div>
         </div>
     </div>

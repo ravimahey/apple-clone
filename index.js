@@ -94,3 +94,28 @@ const closeButton = document.querySelector(".nav-dropdown-mobile-close");
 closeButton.addEventListener("click", () => {
   closeMobileDropDown(".nav-dropdown-mobile");
 });
+
+
+const toggleFooter = (elementId)=>{
+  const element = document.getElementsByClassName("footer-list-" + elementId)[0] ;
+  const icon = document.getElementsByClassName('footer-dropdowns-icon-'+elementId)[0];
+  if(element.classList.contains('f-expand')){  
+    element.classList.remove('f-expand')
+    icon.classList.remove('f-reverse-icon');
+    icon.classList.add('f-reverse-icon-back');
+  }
+  else{
+    element.classList.add('f-expand');
+    element.classList.add('f-expand-animation');
+    icon.classList.remove('f-reverse-icon-back');
+    icon.classList.add('f-reverse-icon')
+  }
+}
+
+
+const footerHeaders = document.querySelectorAll('.footer-list-title');
+footerHeaders.forEach(element => {
+  element.addEventListener('click', (e)=>{
+    toggleFooter(e.target.id);
+  })  
+});
