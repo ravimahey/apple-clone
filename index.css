@@ -640,7 +640,9 @@ hr {
 .footer-list li {
     margin-bottom: 1rem;
 }
-
+.footer-container hr{
+    border: none;
+}
 .more-ways {
     color: #858586;
     background-color: #f5f5f7;
@@ -896,7 +898,12 @@ hr {
         
     }
     .footer-container hr {
+        border: 1px solid;
+        border-left: 0;
+        border-right: 0;
+        border-bottom: 0;
         margin: 0;
+        border-color: #cfcfcf;
     }
     .f-expand{
         display: block;
