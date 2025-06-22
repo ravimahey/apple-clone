@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+    <div class="strip fc-2" style="display: none;">
+        <span>
+            <p>Choose another country or region to see content specific to your location and shop online.</p>
+        </span>
+        <span>
+            <select name="country" id="country">
+                <option value="India">India</option>
+                <option value="other">Other country or region</option>
+            </select>
+        </span>
+        <span><button>Confirm</button> <span> <button><svg xmlns="http://www.w3.org/2000/svg" height="14" width="14"
+                        viewBox="0 0 384 512">
+                        <path
+                            d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                    </svg></button></span>
+        </span>
+    </div>
+    <div class="navbar" id="navbar">
+        <ul class="nav-list">
+            <li>
+                <a href="#">
+                    <svg height="44" viewBox="0 0 14 44" width="14" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m13.0729 17.6825a3.61 3.61 0 0 0 -1.7248 3.0365 3.5132 3.5132 0 0 0 2.1379 3.2223 8.394 8.394 0 0 1 -1.0948 2.2618c-.6816.9812-1.3943 1.9623-2.4787 1.9623s-1.3633-.63-2.613-.63c-1.2187 0-1.6525.6507-2.644.6507s-1.6834-.9089-2.4787-2.0243a9.7842 9.7842 0 0 1 -1.6628-5.2776c0-3.0984 2.014-4.7405 3.9969-4.7405 1.0535 0 1.9314.6919 2.5924.6919.63 0 1.6112-.7333 2.8092-.7333a3.7579 3.7579 0 0 1 3.1604 1.5802zm-3.7284-2.8918a3.5615 3.5615 0 0 0 .8469-2.22 1.5353 1.5353 0 0 0 -.031-.32 3.5686 3.5686 0 0 0 -2.3445 1.2084 3.4629 3.4629 0 0 0 -.8779 2.1585 1.419 1.419 0 0 0 .031.2892 1.19 1.19 0 0 0 .2169.0207 3.0935 3.0935 0 0 0 2.1586-1.1368z">
+                        </path>
+                    </svg>
+                </a>
+            </li>
+            <li class="nav-store"><a href="#">Store</a></li>
+            <li class="nav-mac"><a href="#">Mac</a></li>
+            <li class="nav-ipad"><a href="#">iPad</a></li>
+            <li><a href="#">Watch</a></li>
+            <li><a href="#">AirPods</a></li>
+            <li><a href="#">TV & Home</a></li>
+            <li><a href="#">Entertainment</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">
+                    <span id="search">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="14" width="14" viewBox="0 0 512 512">
+                            <path
+                                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                        </svg>
+                    </span>
+                </a>
+            </li>
+            <li><a href="">
+                    <span id="cart">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="14" width="14" viewBox="0 0 448 512">
+                            <path
+                                d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 416c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48C336 50.1 285.9 0 224 0S112 50.1 112 112l0 48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z" />
+                        </svg>
+                    </span>
+                </a></li>
+        </ul>
+        <div class="nav-dropdown">
+            <div class="store">
+                <div class="nav-dropdown-item">
+                    <div class="nav-dropdown-title">Shop</div>
+                    <ul class="nav-dropdown-item-bold-list">
+                        <li><a href="">Shop the latest</a></li>
+                        <li><a href="">Mac</a></li>
+                        <li><a href="">iPad</a></li>
+                        <li><a href="">iPhone</a></li>
+                        <li><a href="">Apple Watch</a></li>
+                        <li><a href="">Apple Vision Pro</a></li>
+                        <li><a href="">Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="nav-dropdown-item">
+                    <div class="nav-dropdown-title">Quick Links</div>
+                    <ul class="nav-dropdown-item-list">
+                        <li><a href="">Find a Store</a></li>
+                        <li><a href="">Order Status</a></li>
+                        <li><a href="">Apple Trade in</a></li>
+                        <li><a href="">Financing</a></li>
+                        <li><a href="">Personal Setup</a></li>
+                        <li><a href="">College Student Offer</a></li>
+                    </ul>
+
+                </div>
+                <div class="nav-dropdown-item">
+                    <div class="nav-dropdown-title">Shop Special stores</div>
+                    <ul class="nav-dropdown-item-list">
+                        <li><a href="">Certified Refurbished</a></li>
+                        <li><a href="">Educationu</a></li>
+                        <li><a href="">Bussiness</a></li>
+                        <li><a href="">Veterans and Military</a></li>
+                        <li><a href="">Government</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="navbar-mobile" id="navbar-mobile" style="display: none;">
+        <span class="mobile-logo">
+            <svg xmlns="http://www.w3.org/2000/svg" height=22px width="22px" viewBox="0 0 384 512">
+                <path
+                    d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z" />
+            </svg>
+        </span>
+        <span class="navbar-mobile-menu">
+            <span>
+                <span id="search">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="17" width="17" viewBox="0 0 512 512">
+                        <path
+                            d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                    </svg>
+                </span>
+            </span>
+            <span>
+                <span id="cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="17" width="17" viewBox="0 0 448 512">
+                        <path
+                            d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 416c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48C336 50.1 285.9 0 224 0S112 50.1 112 112l0 48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z" />
+                    </svg>
+                </span>
+            </span>
+            <span>
+                <a class="nav-dropdown-mobile-open" href="#">
+                <svg width="17" height="17" viewBox="0 0 18 18">
+                    <polyline id="globalnav-menutrigger-bread-bottom" fill="none" stroke="currentColor"
+                        stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" points="2 12, 16 12"
+                        class="globalnav-menutrigger-bread globalnav-menutrigger-bread-bottom">
+                        <animate id="globalnav-anim-menutrigger-bread-bottom-open" attributeName="points"
+                            keyTimes="0;0.5;1" dur="0.24s" begin="indefinite" fill="freeze" calcMode="spline"
+                            keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1" values=" 2 12, 16 12; 2 9, 16 9; 3.5 15, 15 3.5">
+                        </animate>
+                        <animate id="globalnav-anim-menutrigger-bread-bottom-close" attributeName="points"
+                            keyTimes="0;0.5;1" dur="0.24s" begin="indefinite" fill="freeze" calcMode="spline"
+                            keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1" values=" 3.5 15, 15 3.5; 2 9, 16 9; 2 12, 16 12">
+                        </animate>
+                    </polyline>
+                    <polyline id="globalnav-menutrigger-bread-top" fill="none" stroke="currentColor" stroke-width="1.2"
+                        stroke-linecap="round" stroke-linejoin="round" points="2 5, 16 5"
+                        class="globalnav-menutrigger-bread globalnav-menutrigger-bread-top">
+                        <animate id="globalnav-anim-menutrigger-bread-top-open" attributeName="points"
+                            keyTimes="0;0.5;1" dur="0.24s" begin="indefinite" fill="freeze" calcMode="spline"
+                            keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1" values=" 2 5, 16 5; 2 9, 16 9; 3.5 3.5, 15 15">
+                        </animate>
+                        <animate id="globalnav-anim-menutrigger-bread-top-close" attributeName="points"
+                            keyTimes="0;0.5;1" dur="0.24s" begin="indefinite" fill="freeze" calcMode="spline"
+                            keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1" values=" 3.5 3.5, 15 15; 2 9, 16 9; 2 5, 16 5">
+                        </animate>
+                    </polyline>
+                </svg>
+                </a>
+            </span>
+        </span>
+    </div>
+    <div class="nav-dropdown-mobile">
+        <ul class="nav-dropdown-mobile-list">
+            <li><a href="">Store</a></li>
+            <li><a href="">Mac</a></li>
+            <li><a href="">iPad</a></li>
+            <li><a href="">iPhone</a></li>
+            <li><a href="">Watch</a></li>
+            <li><a href="">Vision</a></li>
+            <li><a href="">AirPods</a></li>
+            <li><a href="">TV & Home</a></li>
+            <li><a href="">Entertainment</a></li>
+            <li><a href="">Accessories</a></li>
+        </ul>
+        <div class="nav-dropdown-mobile-close"><a href="#">
+            X
+        </a></div>
+    </div>
+    <div class="macair-sec">
+        <div class="macair-sec-top">
+            <h1>MacBook Air</h1>
+            <h3>
+                Sky blue color.
+            </h3>
+            <h3>
+                Sky high performance with M4
+            </h3>
+            <div class="macair-sec-top-buttons">
+                <a href="#" class="learnmore">Learn More </a>
+                <a href="#" class="buy"> Buy</a>
+            </div>
+        </div>
+        <div class="macair-sec-bottom">
+            <h4>Built for Apple intelligence</h4>
+        </div>
+    </div>
+    <div class="video-section">
+        <video autoplay loop id="video-bg">
+            <source src="assets/ear-pods.webm" type="video/webm">
+        </video>
+        <div class="section2">
+            <div class="section2-box">
+                Buy Mac or iPad for college
+                <img class="emoji-laptop" src="assets/emoji-laptop.png" alt="">
+                <img class="emoji-tab" src="assets/emoji-tab.png" alt="">
+            </div>
+            <div class="section2-box-center">With education savings</div>
+            <div class="section2-box">
+                Choose AirPods or an eligible accessory
+                <img class="emoji" src="assets/emoji.png" alt="">
+            </div>
+            <button class="shop">Shop</button>
+        </div>
+    </div>
+    <div class="section3">
+        <h1>iPhone</h1>
+        <h3>Meet thee iPhone 16 family</h3>
+        <div class="macair-sec-top-buttons">
+            <a href="#" class="learnmore">Learn More </a>
+            <a href="#" class="buy"> Shop iPhone</a>
+        </div>
+        <div class="macair-sec-bottom section3-quote">
+            <h4>Built for Apple intelligence</h4>
+        </div>
+    </div>
+    <div class="gallary">
+        <div class="item-1 gallary-item-bg">
+            <div>
+                <div class="grid-item-title">iPad Pro</div>
+                <div class="grid-item-description">Unbelieablee thin. Incredibly powrful</div>
+                <div class="macair-sec-top-buttons grid-item-buttons">
+                    <a href="#" class="learnmore">Learn More </a>
+                    <a href="#" class="buy"> Buy</a>
+                </div>
+            </div>
+            <div class="macair-sec-bottom grid-item-bottom">
+                <h4>Built for Apple intelligence</h4>
+            </div>
+
+        </div>
+        <div class="item-2 gallary-item-bg">
+            <img class="grid-item-title" src="assets/watch-logo.png" alt="">
+            <div class="grid-item-description ">Thinstant classic.</div>
+            <div class="macair-sec-top-buttons grid-item-buttons">
+                <a href="#" class="learnmore">Learn More </a>
+                <a href="#" class="buy"> Buy</a>
+            </div>
+        </div>
+        <div class="item-3 gallary-item-bg">
+            <div class="grid-item-title">AirPods Pro2</div>
+            <div class="grid-item-description">Now with a Hearing Aid featuree.</div>
+            <div class="macair-sec-top-buttons grid-item-bottom">
+                <a href="#" class="learnmore">Learn More </a>
+                <a href="#" class="buy"> Buy</a>
+            </div>
+        </div>
+        <div class="item-4 gallary-item-bg">
+            <div class="gallary-item-top">
+                <div class="grid-item-title">MacBook Pro</div>
+                <div class="grid-item-description">A work of smart</div>
+                <div class="macair-sec-top-buttons">
+                    <a href="#" class="learnmore">Learn More </a>
+                    <a href="#" class="buy"> Buy</a>
+                </div>
+            </div>
+            <div class="macair-sec-bottom grid-item-bottom">
+                <h4>Built for Apple intelligence</h4>
+            </div>
+        </div>
+        <div class="item-5 gallary-item-bg">
+            <img src="assets/intrade.png" alt="#">
+            <div class="grid-item-description">Get $170-$630 in credit when</div>
+            <div class="grid-item-description">you trade in iPhoneee 12 or higher.</div>
+            <div class="grid-item-description">higher.</div>
+            <div class="macair-sec-top-buttons">
+                <a href="#" class="learnmore">Get your estimate</a>
+            </div>
+        </div>
+        <div class="item-6 gallary-item-bg">
+            <img src="assets/card.png" alt="#">
+            <div class="grid-item-description">Get up to 3% Daily Cash back</div>
+            <div class="grid-item-description">with every purchase.</div>
+            <div class="macair-sec-top-buttons">
+                <a href="#" class="learnmore">Learn More</a>
+                <a href="#" class="buy"> Apply Now</a>
+            </div>
+
+        </div>
+    </div>
+    <div class="carousel">
+        <div class="banner" id="banner-10">
+            <img src="assets/carousal/banner-10.png" alt="">
+            <div class="banner-item">
+
+                <button class="stream-now-button">Streeam Now</button>
+                <span class="catagory">Comedy</span>
+                <span>.</span>
+                <span class="description">Kindness makes a comeback.</span>
+
+            </div>
+        </div>
+        <div class="banner" id="banner-1">
+            <img src="assets/carousal/banner-1.png" alt="">
+            <div class="banner-item">
+
+                <button class="stream-now-button">Streeam Now</button>
+                <span class="catagory">Comedy</span>
+                <span>.</span>
+                <span class="description">A heartfelt comedy about life and other hazards.</span>
+
+            </div>
+        </div>
+        <div class="banner" id="banner-2">
+            <img src="assets/carousal/banner-2.png" alt="">
+            <div class="banner-item">
+
+                <button class="stream-now-button">Streeam Now</button>
+                <span class="catagory">Drama</span>
+                <span>.</span>
+                <span class="description">New season</span>
+
+            </div>
+        </div>
+        <div class="banner" id="banner-3">
+            <img src="assets/carousal/banner-3.png" alt="">
+            <div class="banner-item">
+
+                <button class="stream-now-button">Streeam Now</button>
+                <span class="catagory">Thriller</span>
+                <span>.</span>
+                <span class="description">A mother at peace. A daughter is crisis. A night that changes
+                    everything.</span>
+
+            </div>
+        </div>
+        <div class="banner" id="banner-4">
+            <img src="assets/carousal/banner-4.png" alt="">
+            <div class="banner-item">
+
+                <button class="stream-now-button">Streeam Now</button>
+                <span class="catagory">Drama</span>
+                <span>.</span>
+                <span class="description">Live your best life</span>
+
+            </div>
+        </div>
+        <div class="banner" id="banner-5">
+            <img src="assets/carousal/banner-5.png" alt="">
+            <div class="banner-item">
+
+                <button class="stream-now-button">See the schedule</button>
+                <!-- <span class="catagory">Comedy</span> -->
+                <!-- <span>.</span> -->
+                <span class="description">Watch every club, every match, live - all season long</span>
+
+            </div>
+        </div>
+        <div class="banner" id="banner-6">
+            <img src="assets/carousal/banner-6.png" alt="">
+            <div class="banner-item">
+
+                <button class="stream-now-button">Streeam Now</button>
+                <span class="catagory">Sci-fi</span>
+                <span>.</span>
+                <span class="description">Built to destroy. Forced to connect.</span>
+
+            </div>
+        </div>
+        <div class="banner" id="banner-7">
+            <img src="assets/carousal/banner-7.png" alt="">
+            <div class="banner-item">
+
+                <button class="stream-now-button">Streeam Now</button>
+                <span class="catagory">Action</span>
+                <span>.</span>
+                <span class="description">It's only a legent util you discover it</span>
+
+            </div>
+        </div>
+        <div class="banner" id="banner-8">
+            <img src="assets/carousal/banner-8.png" alt="">
+            <div class="banner-item">
+
+                <button class="stream-now-button">See the schedule</button>
+                <!-- <span class="catagory"></span> -->
+                <!-- <span>.</span> -->
+                <span class="description">Live MLB gamees, every Friday.</span>
+
+            </div>
+        </div>
+        <div class="banner" id="banner-9">
+            <img src="assets/carousal/banner-9.png" alt="">
+            <div class="banner-item">
+
+                <button class="stream-now-button">Streeam Now</button>
+                <span class="catagory">Comedy</span>
+                <span>.</span>
+                <span class="description">Seth Rogen dives into the wild chaos of Hollywood in this all - star
+                    satire.</span>
+
+            </div>
+        </div>
+        <div class="banner" id="banner-10">
+            <img src="assets/carousal/banner-10.png" alt="">
+            <div class="banner-item">
+
+                <button class="stream-now-button">Streeam Now</button>
+                <span class="catagory">Comedy</span>
+                <span>.</span>
+                <span class="description">Kindness makes a comeback.</span>
+
+            </div>
+        </div>
+        <div class="banner" id="banner-1">
+            <img src="assets/carousal/banner-1.png" alt="">
+            <div class="banner-item">
+
+                <button class="stream-now-button">Streeam Now</button>
+                <span class="catagory">Comedy</span>
+                <span>.</span>
+                <span class="description">A heartfelt comedy about life and other hazards.</span>
+
+            </div>
+        </div>
+    </div>
+    <div class="infinite-slider">
+        <div class="card-group">
+            <div class="card">
+                <img src="assets/slider/1.png" alt="">
+                <div class="card-bottom-section">
+                    <div>PGA Tour Pro Golf</div>
+                    <div><img src="assets/apple.png" alt=""></div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/slider/2.png" alt="">
+                <div class="card-bottom-section">
+                    <div>PGA Tour Pro Golf</div>
+                    <div><img src="assets/apple.png" alt=""></div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/slider/3.png" alt="">
+                <div class="card-bottom-section">
+                    <div>PGA Tour Pro Golf</div>
+                    <div><img src="assets/apple.png" alt=""></div><span>Arcade</span>
+                </div>
+            </div>
+        </div>
+        <div class="card-group">
+            <div class="card ">
+                <img src="assets/slider/4.png" alt="">
+                <div class="card-bottom-section">
+                    <div>PGA Tour Pro Golf</div>
+                    <div><img src="assets/apple.png" alt=""></div>
+                </div>
+            </div>
+            <div class="card special-card">
+                <img src="assets/slider/5.png" alt="">
+                <div class="card-bottom-section">
+                    <div>PGA Tour Pro Golf</div>
+                    <div><img src="assets/apple.png" alt=""></div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/slider/6.png" alt="">
+                <div class="card-bottom-section">
+                    <div>PGA Tour Pro Golf</div>
+                    <div>
+                        <img src="assets/apple.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-group">
+            <div class="card">
+                <img src="assets/slider/1.png" alt="">
+                <div class="card-bottom-section">
+                    <div>PGA Tour Pro Golf</div>
+                    <div><img src="assets/apple.png" alt=""></div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/slider/2.png" alt="">
+                <div class="card-bottom-section">
+                    <div>PGA Tour Pro Golf</div>
+                    <div><img src="assets/apple.png" alt=""></div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/slider/3.png" alt="">
+                <div class="card-bottom-section">
+                    <div>PGA Tour Pro Golf</div>
+                    <div><img src="assets/apple.png" alt=""></div><span>Arcade</span>
+                </div>
+            </div>
+        </div>
+        <div class="card-group">
+            <div class="card ">
+                <img src="assets/slider/4.png" alt="">
+                <div class="card-bottom-section">
+                    <div>PGA Tour Pro Golf</div>
+                    <div><img src="assets/apple.png" alt=""></div>
+                </div>
+            </div>
+            <div class="card special-card">
+                <img src="assets/slider/5.png" alt="">
+                <div class="card-bottom-section">
+                    <div>PGA Tour Pro Golf</div>
+                    <div><img src="assets/apple.png" alt=""></div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/slider/6.png" alt="">
+                <div class="card-bottom-section">
+                    <div>PGA Tour Pro Golf</div>
+                    <div>
+                        <img src="assets/apple.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="policy">
+        <div class="policy-content">
+            <p>
+                1. Available for Qualified Purchasers only. Qualified Purchasers purchasing an eligible Mac/iPad
+                (“Eligible Product”) with eligible AirPods/accessory (“Promotion Product”) from a Qualifying Location
+                through September 30, 2025 will receive Promotion Savings (up to $199, not to exceed the price of the
+                Promotion Product). Customers will be charged for all items in their cart, including the Promotion
+                Product. Only one Promotion Product per Eligible Product per Qualified Purchaser. Offer subject to
+                availability. While supplies last. Additional restrictions apply. View full offer terms here.
+            </p>
+            <p>2. Hearing Aid and Hearing Test: The Hearing Aid feature has received FDA authorization. The Hearing Test
+                and Hearing Aid features are supported on AirPods Pro 2 with the latest firmware paired with a
+                compatible iPhone or iPad with iOS 18 or iPadOS 18 and later and are intended for people 18 years old or
+                older. The Hearing Aid feature is also supported on a compatible Mac with macOS Sequoia and later. It is
+                intended for people with perceived mild to moderate hearing loss.</p>
+            <p>Hearing Protection: The Hearing Protection feature works with AirPods Pro 2 with the latest firmware when
+                paired with a compatible iPhone, iPad, or Mac with iOS 18, iPadOS 18, or macOS Sequoia and later.
+                Feature is only available in the U.S. and Canada. See support.apple.com/120850 for total attenuation and
+                more information. The Hearing Protection feature is not suitable for protection against extremely loud
+                impulse sounds, such as gunfire, fireworks, or jackhammers, or against sustained sounds louder than 110
+                dBA.</p>
+            <p>3. Trade‑in values will vary based on the condition, year, and configuration of your eligible trade‑in
+                device. Not all devices are eligible for credit. You must be at least the age of majority to be eligible
+                to trade in for credit or for an Apple Gift Card. Trade‑in value may be applied toward qualifying new
+                device purchase, or added to an Apple Gift Card. Actual value awarded is based on receipt of a
+                qualifying device matching the description provided when estimate was made. Sales tax may be assessed on
+                full value of a new device purchase. In‑store trade‑in requires presentation of a valid photo ID (local
+                law may require saving this information). Offer may not be available in all stores, and may vary between
+                in‑store and online trade‑in. Some stores may have additional requirements. Apple or its trade‑in
+                partners reserve the right to refuse, cancel, or limit quantity of any trade‑in transaction for any
+                reason. More details are available from Apple’s trade-in partner for trade‑in and recycling of eligible
+                devices. Restrictions and limitations may apply.</p>
+            <p>To access and use all Apple Card features and products available only to Apple Card users, you must add
+                Apple Card to Wallet on an iPhone or iPad that supports and has the latest version of iOS or iPadOS.
+                Apple Card is subject to credit approval, available only for qualifying applicants in the United States,
+                and issued by Goldman Sachs Bank USA, Salt Lake City Branch.</p>
+            <p>Apple Payments Services LLC, a subsidiary of Apple Inc., is a service provider of Goldman Sachs Bank USA
+                for Apple Card and Savings accounts. Neither Apple Inc. nor Apple Payments Services LLC is a bank.</p>
+            <p>If you reside in the U.S. territories, please call Goldman Sachs at 877-255-5923 with questions about
+                Apple Card.</p>
+            <p>Learn more about how Apple Card applications are evaluated at support.apple.com/kb/HT209218.</p>
+            <p>
+                Apple Intelligence is available in beta on all iPhone 16 models, iPhone 15 Pro, iPhone 15 Pro Max, iPad
+                mini (A17 Pro), and iPad and Mac models with M1 and later, with Siri and device language set to the same
+                supported language, as part of an iOS 18, iPadOS 18, and macOS Sequoia software update. Supported
+                languages include English, French, German, Italian, Portuguese (Brazil), Spanish, Japanese, Korean, and
+                Chinese (Simplified). More languages are coming over the course of the year, including Vietnamese. Some
+                features may not be available in all regions or languages.
+            </p>
+            <p>A subscription is required for Apple Arcade, Apple Fitness+, Apple Music, and Apple TV+.</p>
+            <p>Features are subject to change. Some features, applications, and services may not be available in all
+                regions or all languages.</p>
+            <hr>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-container">
+            <div>
+                <div>
+                    <div class="footer-list-title">
+                        Shop and Learn
+                    </div>
+                    <ul class="footer-list">
+                        <li> <a href="#">Store </a></li>
+                        <li> <a href="#">Mac </a></li>
+                        <li> <a href="#">iPad </a></li>
+                        <li> <a href="#">iPhone </a></li>
+                        <li> <a href="#">Watch </a></li>
+                        <li> <a href="#">AirPods </a></li>
+                        <li> <a href="#">TV & Home </a></li>
+                        <li> <a href="#">AirTag </a></li>
+                        <li> <a href="#">Accessories</a> </li>
+                        <li> <a href="#">Gift Cards </a> </li>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="footer-list-title">
+                        Apple Wallet
+                    </div>
+                    <ul class="footer-list">
+                        <li> <a href="#"> Wallet </a>
+                        <li> <a href="#"> Apple Card </a>
+                        <li> <a href="#"> Apple Pay </a>
+                        <li> <a href="#"> Apple Cash </a>
+
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <div class="footer-list-title">
+                            Account
+                        </div>
+                        <ul class="footer-list">
+                            <li> <a href="#"> Manage Your Apple Account</a></li>
+                            <li> <a href="#"> Apple Store Account</a></li>
+                            <li> <a href="#"> iCloud.com</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div>
+                            <div class="footer-list-title">Entertainment</div>
+                            <ul class="footer-list">
+                                <li> <a href="#"> Apple One</a></li>
+                                <li> <a href="#"> Apple TV+</a></li>
+                                <li> <a href="#"> Apple Music</a></li>
+                                <li> <a href="#"> Apple Arcade</a></li>
+                                <li> <a href="#"> Apple Fitness+</a></li>
+                                <li> <a href="#"> Apple News+</a></li>
+                                <li> <a href="#"> Apple Podcasts</a></li>
+                                <li> <a href="#"> Apple Books</a></li>
+                                <li> <a href="#"> App Store</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="footer-list-title">Apple Store</div>
+                <ul class="footer-list">
+
+
+                    <li> <a href="#">Find a Store </a></li>
+                    <li> <a href="#">Genius Bar </a></li>
+                    <li> <a href="#">Today at Apple </a></li>
+                    <li> <a href="#">Group Reservations </a></li>
+                    <li> <a href="#">Apple Camp </a></li>
+                    <li> <a href="#">Apple Store App </a></li>
+                    <li> <a href="#">Certified Refurbished </a></li>
+                    <li> <a href="#">Apple Trade In </a></li>
+                    <li> <a href="#">Financing </a></li>
+                    <li> <a href="#">Carrier Deals at Apple </a></li>
+                    <li> <a href="#">Order Status </a></li>
+                    <li> <a href="#">Shopping Help </a></li>
+                </ul>
+            </div>
+            <div>
+                <div>
+                    <div class="footer-list-title">For Bussiness</div>
+                    <ul class="footer-list">
+                        <li> <a href="#">Apple and Business</a></li>
+                        <li> <a href="#">Shop for Business</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="footer-list-title">For Education</div>
+                    <ul class="footer-list">
+                        <li><a href="#">Apple and Education</a></li>
+                        <li><a href="#">Shop for Education</a></li>
+                        <li><a href="#">Shop for University</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="footer-list-title">For Health</div>
+                    <ul class="footer-list">
+                        <li><a href="#">Apple in Healthcare</a></li>
+                        <li><a href="#">Mac in Healthcare</a></li>
+                        <li><a href="#">Health on Apple watch</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="footer-list-title">For Government</div>
+                    <ul class="footer-list">
+                        <li><a href="#">Apple in Healthcare</a></li>
+                        <li><a href="#">Shop for Veterans and Military</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div class="footer-list-title">Apple Values</div>
+                    <ul class="footer-list">
+                        <li><a href="#">Accessibility</a></li>
+                        <li><a href="#">Education</a></li>
+                        <li><a href="#">Environment</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Supply Chain Innovation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="footer-list-title">About Apple</div>
+                    <ul class="footer-list">
+                        <li><a href="#">Newsroom</a></li>
+                        <li><a href="#">Apple Leadership</a></li>
+                        <li><a href="#">Career Opportunities</a></li>
+                        <li><a href="#">Investors</a></li>
+                        <li><a href="#">Ethics & Compliance</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Contact Apple</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="more-ways">
+            More ways to shop: <span> <a href="">Find an Apple Store</a> </span> or <span> <a href="">other
+                    retailer</a></span> near you. Or call <span> <a href="">1-800-MY-APPLE</a></span>(1-800-692-7753).
+            <hr>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="copyright">
+            Copyright © 2025 Apple Inc. All rights reserved.
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>|
+                <li><a href="#">Terms of Use</a></li>|
+                <li><a href="#">Sales Policy</a></li>|
+                <li><a href="#">Legal</a></li>|
+                <li><a href="#">Site Map</a></li>
+            </ul>
+            <p>
+                United States
+            </p>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
